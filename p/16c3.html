@@ -101,7 +101,7 @@
 <meta property="og:image" content="https://sunbelife.com/p/16c3/10-状态.png">
 <meta property="og:image" content="https://sunbelife.com/p/16c3/2-adb.jpeg">
 <meta property="og:image" content="https://sunbelife.com/p/16c3/11-shell.jpeg">
-<meta property="og:updated_time" content="2018-09-11T05:18:53.232Z">
+<meta property="og:updated_time" content="2018-09-11T05:26:45.607Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="没有 XX 助手没关系，在 macOS 上照样玩转 Android 机">
 <meta name="twitter:description" content="前几日突然萌生入一台安卓折腾折腾的想法，于是从朋友手里收到一台 Nexus 6P。到货第一天便折腾到半夜，激情复燃，想写一写在 macOS 上搞机的心得，虽然没有 Windows 平台那么多『助手』和『大师』帮忙。但其实也没有想象中那么蛋疼。相反，没有这些『大师』对你手机的『指指点点』，搞机过程还更舒心一些。">
@@ -356,29 +356,8 @@
 <a id="more"></a>
 <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>本文内容都基于 ADB（Android Debug Bridge）这个工具，它可以实现对 Android 设备应用的安装和设备的调试，所以以下的内容都基于它提供的功能，如果你仅仅知道 ADB，但还不熟悉，你可以把本文当做它的小白文档参考使用。如果你已经非常熟悉 ADB，你可以查看其它文章，因为本文只是在介绍它包含的功能而已。</p>
 <p>详细全面的介绍也可以参考文章末尾附录提供的网址。</p>
-<h3 id="阅读约定"><a href="#阅读约定" class="headerlink" title="阅读约定"></a>阅读约定</h3><p>开始之前，为了避免理解差异和排版美观，先和各位约定一下本教程的使用方法：</p>
-<ul>
-<li><p>一些需要多次使用的内容，为放混淆，我会在开始时进行详细解释，并赋予一个英文代称，文章后续会直接使用该代称，并用 <em>细斜体</em> 表示。</p>
-<ul>
-<li><p>如 <em>my_title</em> = 你文章的标题。</p>
-<p>  即后面文章出现的 <em>my_title</em> 即都代表着你文章的标题。</p>
-</li>
-</ul>
-</li>
-<li><p>以 <strong><em>粗斜体</em></strong> 展示的内容，是你需要根据实际情况自行替换的。</p>
-<ul>
-<li><p>如 cd /Users/<strong><em>你的用户名</em></strong>/Desktop</p>
-<p>  即需要先找到你的用户名，比如 Sunbelife，该段即为 cd /Users/Sunbelife/Desktop</p>
-</li>
-</ul>
-</li>
-<li><p>以下代码块方式展示的内容，一般情况下是你需要输入在终端或控制台内的，但也有特殊情况，比如示例或实例代码的展示：</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">代码块</span><br></pre></td></tr></table></figure>
-<h3 id="问答"><a href="#问答" class="headerlink" title="问答"></a>问答</h3><p>如有任何关于教程的问题，请在文章底部，礼貌，尊重，全面地描述清楚你的问题。</p>
-<p>包括你操作在哪一步，尝试过什么努力，最后结果提示了什么，希望我给你哪部分帮助，最好可以附图。</p>
-<p>有关如何提问，请查阅：<a href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md" target="_blank" rel="noopener">《提问的智慧 <strong>How To Ask Questions The Smart Way</strong>》</a>，这将对你在互联网上有效地获取信息有很大帮助。</p>
+<h3 id="阅读约定"><a href="#阅读约定" class="headerlink" title="阅读约定"></a>阅读约定</h3><p>为了排版美观，减少理解错误，提高阅读效率，本文采用了一些自定的撰写规则。</p>
+<p>请务必在阅读下文前在这里阅读本文章的 -&gt; <a href="https://sunbelife.com/p/62df.html">阅读指南</a>。</p>
 <h2 id="教程正文"><a href="#教程正文" class="headerlink" title="教程正文"></a>教程正文</h2><h3 id="进入模式-·-刷机第一步"><a href="#进入模式-·-刷机第一步" class="headerlink" title="进入模式  · 刷机第一步"></a>进入模式  · 刷机第一步</h3><p>刚拿到 Nexus 系列机器时需要做的第一件事就是解开 Bootloader 锁，之后才可以刷入任意的第三方 Recovery。<br>而在 macOS 上你只需要打开终端，输入以下命令，来安装本文的主角：ADB.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install android-platform-tools</span><br></pre></td></tr></table></figure>
 <p>走完进度条之后，输入以下命令来测试是否安装成功：</p>
@@ -514,8 +493,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/p/62df.html" rel="prev" title="教程的统一阅读指南">
-                教程的统一阅读指南 <i class="fa fa-chevron-right"></i>
+              <a href="/p/62df.html" rel="prev" title="本博客教程的统一阅读指南">
+                本博客教程的统一阅读指南 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -692,7 +671,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#阅读约定"><span class="nav-number">1.1.</span> <span class="nav-text">阅读约定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问答"><span class="nav-number">1.2.</span> <span class="nav-text">问答</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#教程正文"><span class="nav-number">2.</span> <span class="nav-text">教程正文</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#进入模式-·-刷机第一步"><span class="nav-number">2.1.</span> <span class="nav-text">进入模式  · 刷机第一步</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#拿到新机-·-解锁不麻烦"><span class="nav-number">2.2.</span> <span class="nav-text">拿到新机  · 解锁不麻烦</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自由刷机-·-就几条命令"><span class="nav-number">2.3.</span> <span class="nav-text">自由刷机  · 就几条命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#互传文件-·-不用找助手"><span class="nav-number">2.4.</span> <span class="nav-text">互传文件  · 不用找助手</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装程序-·-就这一下子"><span class="nav-number">2.5.</span> <span class="nav-text">安装程序  · 就这一下子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#无线连接-·-啥姿势都行"><span class="nav-number">2.6.</span> <span class="nav-text">无线连接  · 啥姿势都行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SSH-接入-·-开启新天地"><span class="nav-number">2.7.</span> <span class="nav-text">SSH 接入 · 开启新天地</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#附录最后-·-为了凑字数"><span class="nav-number">2.8.</span> <span class="nav-text">附录最后  · 为了凑字数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最后附上几个你可能会需要的东西："><span class="nav-number">3.</span> <span class="nav-text">最后附上几个你可能会需要的东西：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#阅读约定"><span class="nav-number">1.1.</span> <span class="nav-text">阅读约定</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#教程正文"><span class="nav-number">2.</span> <span class="nav-text">教程正文</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#进入模式-·-刷机第一步"><span class="nav-number">2.1.</span> <span class="nav-text">进入模式  · 刷机第一步</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#拿到新机-·-解锁不麻烦"><span class="nav-number">2.2.</span> <span class="nav-text">拿到新机  · 解锁不麻烦</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自由刷机-·-就几条命令"><span class="nav-number">2.3.</span> <span class="nav-text">自由刷机  · 就几条命令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#互传文件-·-不用找助手"><span class="nav-number">2.4.</span> <span class="nav-text">互传文件  · 不用找助手</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装程序-·-就这一下子"><span class="nav-number">2.5.</span> <span class="nav-text">安装程序  · 就这一下子</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#无线连接-·-啥姿势都行"><span class="nav-number">2.6.</span> <span class="nav-text">无线连接  · 啥姿势都行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SSH-接入-·-开启新天地"><span class="nav-number">2.7.</span> <span class="nav-text">SSH 接入 · 开启新天地</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#附录最后-·-为了凑字数"><span class="nav-number">2.8.</span> <span class="nav-text">附录最后  · 为了凑字数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最后附上几个你可能会需要的东西："><span class="nav-number">3.</span> <span class="nav-text">最后附上几个你可能会需要的东西：</span></a></li></ol></div>
             
 
           </div>

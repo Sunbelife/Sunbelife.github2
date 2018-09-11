@@ -91,7 +91,7 @@
 <meta property="og:image" content="https://sunbelife.com/p/bd07/1-RSA.png">
 <meta property="og:image" content="https://sunbelife.com/p/bd07/2-配置完毕.png">
 <meta property="og:image" content="https://sunbelife.com/p/bd07/3-Configuration.png">
-<meta property="og:updated_time" content="2018-09-11T05:17:51.475Z">
+<meta property="og:updated_time" content="2018-09-11T05:26:24.194Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="嫌一键关灯后电脑屏幕太亮，我在家鼓捣了好几天">
 <meta name="twitter:image" content="https://sunbelife.com/p/bd07/0-搞定Hass.png">
@@ -382,29 +382,8 @@
 <p>虽然这么个小东西历尽折磨，但最后终于成功的时候体内还是分泌出了一股又一股的浓浓的多巴胺…</p>
 <p>话不多说，上教程。</p>
 <p>注：目前只做了 Mac 版。</p>
-<h3 id="阅读约定"><a href="#阅读约定" class="headerlink" title="阅读约定"></a>阅读约定</h3><p>开始之前，为了避免理解差异和排版美观，先和各位约定一下本教程的使用方法：</p>
-<ul>
-<li><p>一些需要多次使用的内容，为放混淆，我会在开始时进行详细解释，并赋予一个英文代称，文章后续会直接使用该代称，并用 <em>细斜体</em> 表示。</p>
-<ul>
-<li><p>如 <em>my_title</em> = 你文章的标题。</p>
-<p>即后面文章出现的 <em>my_title</em> 即都代表着你文章的标题。</p>
-</li>
-</ul>
-</li>
-<li><p>以 <strong><em>粗斜体</em></strong> 展示的内容，是你需要根据实际情况自行替换的。</p>
-<ul>
-<li><p>如 cd /Users/<strong><em>你的用户名</em></strong>/Desktop</p>
-<p>即需要先找到你的用户名，比如 Sunbelife，该段即为 cd /Users/Sunbelife/Desktop</p>
-</li>
-</ul>
-</li>
-<li><p>以下代码块方式展示的内容，一般情况下是你需要输入在终端或控制台内的，但也有特殊情况，比如示例或实例代码的展示：</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">代码块</span><br></pre></td></tr></table></figure>
-<h3 id="问答"><a href="#问答" class="headerlink" title="问答"></a>问答</h3><p>如有任何关于教程的问题，请在文章底部，礼貌，尊重，全面地描述清楚你的问题。</p>
-<p>包括你操作在哪一步，尝试过什么努力，最后结果提示了什么，希望我给你哪部分帮助，最好可以附图。</p>
-<p>有关如何提问，请查阅：<a href="https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/master/README-zh_CN.md" target="_blank" rel="noopener">《提问的智慧 <strong>How To Ask Questions The Smart Way</strong>》</a>，这将对你在互联网上有效地获取信息有很大帮助。</p>
+<h3 id="阅读约定"><a href="#阅读约定" class="headerlink" title="阅读约定"></a>阅读约定</h3><p>为了排版美观，减少理解错误，提高阅读效率，本文采用了一些自定的撰写规则。</p>
+<p>请务必在阅读下文前在这里阅读本文章的 -&gt; <a href="https://sunbelife.com/p/62df.html">阅读指南</a>。</p>
 <h3 id="文章背景"><a href="#文章背景" class="headerlink" title="文章背景"></a>文章背景</h3><p>本教程基于 macOS 10.14 运行，hexo: 3.7.1，npm 5.6.0，如你与我的版本号不同，可能需要稍作调整或在底下留言更正。</p>
 <h3 id="定义区"><a href="#定义区" class="headerlink" title="定义区"></a>定义区</h3><ul>
 <li><em>pc_username</em> = 你电脑的账户</li>
@@ -693,7 +672,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#阅读约定"><span class="nav-number">1.1.</span> <span class="nav-text">阅读约定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问答"><span class="nav-number">1.2.</span> <span class="nav-text">问答</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章背景"><span class="nav-number">1.3.</span> <span class="nav-text">文章背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定义区"><span class="nav-number">1.4.</span> <span class="nav-text">定义区</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#教程正文"><span class="nav-number">2.</span> <span class="nav-text">教程正文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#残留的问题"><span class="nav-number">3.</span> <span class="nav-text">残留的问题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#阅读约定"><span class="nav-number">1.1.</span> <span class="nav-text">阅读约定</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章背景"><span class="nav-number">1.2.</span> <span class="nav-text">文章背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#定义区"><span class="nav-number">1.3.</span> <span class="nav-text">定义区</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#教程正文"><span class="nav-number">2.</span> <span class="nav-text">教程正文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#残留的问题"><span class="nav-number">3.</span> <span class="nav-text">残留的问题</span></a></li></ol></div>
             
 
           </div>
