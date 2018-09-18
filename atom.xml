@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sunbelife.com/"/>
-  <updated>2018-09-18T13:18:36.510Z</updated>
+  <updated>2018-09-18T13:40:46.412Z</updated>
   <id>https://sunbelife.com/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="https://sunbelife.com/p/c3f1.html"/>
     <id>https://sunbelife.com/p/c3f1.html</id>
     <published>2018-09-18T12:00:29.000Z</published>
-    <updated>2018-09-18T13:18:36.510Z</updated>
+    <updated>2018-09-18T13:40:46.412Z</updated>
     
-    <content type="html"><![CDATA[<p>1、依次进入 Mac 电脑的「偏好设置 - 共享」，勾选「远程登录」的开关。</p><img src="/p/c3f1/0-开启SSH.png"><p>2、按住键盘上的 Option 并点击右上角的 Wi-Fi 图标，获取你的 IP 地址。</p><img src="/p/c3f1/1-获取IP.png"><p>3、获取控制电脑开关机的 Shortcut 链接，在自带浏览器中 <a href="https://www.icloud.com/shortcuts/65ad17498bdc4eb99d31b91c13c2547d" target="_blank" rel="noopener">戳这里添加</a>。</p><img src="/p/c3f1/2-添加Shortcut.png"><p>4、点击「…」，编辑 ShortCut，并修改为刚才你获取的 IP 地址、填入你电脑的账户名、和密码。</p><img src="/p/c3f1/3-拼图.png"><p>5、之后点击 ShortCut 即可运行了。</p><img src="/p/c3f1/4-运行.png">]]></content>
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>今天 iOS 12 发布，随之发布的还有 Shortcuts，下午下载体验之后发现里面居然内置了 SSH 登录功能，所以就顺手把之前做的 <a href="https://sunbelife.com/p/bd07.html">嫌一键关灯后电脑屏幕太亮，我在家鼓捣了好几天</a> 移植了进去，功能一样，教程如下。</p><h2 id="教程正文"><a href="#教程正文" class="headerlink" title="教程正文"></a>教程正文</h2><ol><li>依次进入 Mac 电脑的「偏好设置 - 共享」，勾选「远程登录」的开关。</li></ol><img src="/p/c3f1/0-开启SSH.png"><ol start="2"><li>按住键盘上的 Option 并点击右上角的 Wi-Fi 图标，获取你的 IP 地址。</li></ol><img src="/p/c3f1/1-获取IP.png"><ol start="3"><li>获取控制电脑开关机的 Shortcut 链接，在自带浏览器中 <a href="https://www.icloud.com/shortcuts/65ad17498bdc4eb99d31b91c13c2547d" target="_blank" rel="noopener">戳这里添加</a>。</li></ol><img src="/p/c3f1/2-添加Shortcut.png"><ol start="4"><li>点击「…」，编辑 ShortCut，并修改为刚才你获取的 IP 地址、填入你电脑的账户名、和密码。</li></ol><img src="/p/c3f1/3-拼图.png"><ol start="5"><li>之后点击 ShortCut 即可运行了。</li></ol><img src="/p/c3f1/4-运行.png">]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;1、依次进入 Mac 电脑的「偏好设置 - 共享」，勾选「远程登录」的开关。&lt;/p&gt;&lt;img src=&quot;/p/c3f1/0-开启SSH.png&quot;&gt;&lt;p&gt;2、按住键盘上的 Option 并点击右上角的 Wi-Fi 图标，获取你的 IP 地址。&lt;/p&gt;&lt;img src=&quot;/p/
+        &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;今天 iOS 12 发布，随之发布的还有 Shortcuts，下午下载体验之后发现里面居然内置了 SSH 登录功能，所以就顺手把之前做的 &lt;
       
     
     </summary>
