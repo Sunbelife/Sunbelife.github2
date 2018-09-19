@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sunbelife.com/"/>
-  <updated>2018-09-19T07:44:36.367Z</updated>
+  <updated>2018-09-19T07:54:38.662Z</updated>
   <id>https://sunbelife.com/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>教你通过「Shortcuts 捷径」实现控制电脑开关机</title>
+    <title>教你通过「Shortcuts 捷径」实现控制电脑屏幕开关</title>
     <link href="https://sunbelife.com/p/c3f1.html"/>
     <id>https://sunbelife.com/p/c3f1.html</id>
     <published>2018-09-18T12:00:29.000Z</published>
-    <updated>2018-09-19T07:44:36.367Z</updated>
+    <updated>2018-09-19T07:54:38.662Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>今天 iOS 12 发布，随之发布的还有「Shortcuts 捷径」，下午下载体验之后发现里面居然内置了 SSH 登录功能，所以就顺手把之前做的 <a href="https://sunbelife.com/p/bd07.html">嫌一键关灯后电脑屏幕太亮，我在家鼓捣了好几天</a> 移植了进去，功能一样，教程如下。</p><a id="more"></a><h2 id="教程正文"><a href="#教程正文" class="headerlink" title="教程正文"></a>教程正文</h2><h3 id="macOS-用户"><a href="#macOS-用户" class="headerlink" title="macOS 用户"></a>macOS 用户</h3><p>macOS 用户可以参见以下教程：</p><ol><li>依次进入 Mac 电脑的「偏好设置 - 共享」，勾选「远程登录」的开关。</li></ol><img src="/p/c3f1/0-开启SSH.png"><ol start="2"><li>按住键盘上的「Option 键」并点击右上角的 Wi-Fi 图标，获取你的 IP 地址。</li></ol><img src="/p/c3f1/1-获取IP.png"><ol start="3"><li>获取控制电脑开关机的「Shortcuts 捷径」链接，在自带浏览器中 <a href="https://www.icloud.com/shortcuts/cf4ff64b47ba4ba98d57ee5068662511" target="_blank" rel="noopener">戳这里即可</a>。</li></ol><img src="/p/c3f1/2-添加Shortcut.png"><ol start="4"><li>打开点击「Shortcuts 捷径」App，点击名称后面的「…」编辑，并填入刚才你获取的 IP 地址、填入你电脑的账户名、和密码。</li></ol><img src="/p/c3f1/3-拼图.png"><ol start="5"><li>之后点击「Shortcuts 捷径」即可运行了。</li></ol><img src="/p/c3f1/4-运行.png"><h3 id="Windows-用户"><a href="#Windows-用户" class="headerlink" title="Windows 用户"></a>Windows 用户</h3><p>Windows 用户可以参见以下教程，由 @WithCB 撰写：</p><p><a href="https://www.jianshu.com/p/53f2aea46216" target="_blank" rel="noopener">https://www.jianshu.com/p/53f2aea46216</a></p><h3 id="思考题"><a href="#思考题" class="headerlink" title="思考题"></a>思考题</h3><p>其实仔细想想，捷径内控制屏幕亮或暗的功能可以再改进。</p><p>比如：打开屏幕的时候真的需要在手机上操作捷径么？似乎不用吧，如果只留下屏幕暗下来的开关，再接入 Siri，就可以实现喊 Siri 关屏幕了。</p><p>没错，你可以通过编辑捷径来修改，实现以上功能。</p><p>给你一些小提示，打开编辑捷径状态之后可以发现，整个的过程是由菜单选择不同的 SSH 命令的，通过拖动即可把 SSH 命令独立出来，最后再把菜单删掉就可以了：</p><img src="/p/c3f1/5-思考题.png"><p>如果还是不明白，可以戳这里：<a href="https://www.icloud.com/shortcuts/e1f4381202a74f019aa146348165c3ca" target="_blank" rel="noopener">直接看答案</a></p><center>Enjoy it.</center>]]></content>
     
